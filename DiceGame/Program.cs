@@ -15,10 +15,13 @@ namespace DiceGame
             do { 
                 Console.WriteLine("Press any key to roll the dice");
                 Console.ReadLine();
+                Console.Clear();
                 int PlayerDice = rdm.Next(1, 7);
                 int OppDice = rdm.Next(1, 7);
                 Console.WriteLine("You rolled a " + PlayerDice);
+                Console.WriteLine();
                 Console.WriteLine("Jork rolled a " + OppDice);
+                Console.WriteLine();
 
                 if (PlayerDice > OppDice)
                 {
@@ -32,6 +35,7 @@ namespace DiceGame
                 {
                     Console.WriteLine("You tied!");
                 }
+                Console.WriteLine();
                 Console.WriteLine("Would you like to play again?");
                 Answer:
                 string Again = Console.ReadLine();
